@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje desde el Mundo del Revés</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente que simula pintura negra a mano -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <div class="wall-container">
+        <!-- SVG Wire that connects the lights -->
+        <svg class="wire" viewBox="0 0 1000 600" preserveAspectRatio="none">
+            <path d="M 0,100 Q 250,150 500,80 T 1000,120 M 0,300 Q 300,350 600,280 T 1000,320 M 0,500 Q 200,550 500,480 T 1000,520" fill="none" stroke="#111" stroke-width="6" />
+        </svg>
+
+        <div id="wall" class="wall">
+            <!-- Letras y luces se generan con JS -->
+        </div>
+
+        <div class="controls ui-glass" id="controls-container">
+            <h3>Señal Detectada</h3>
+            <button id="start-btn">Decodificar Mensaje</button>
+            <p class="status" id="status-text">Hay una distorsión magnética cerca...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

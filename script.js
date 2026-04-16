@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // El mensaje predefinido que el usuario pidió
     // (Quitamos la coma porque no hay luz para la coma, un espacio es mejor)
-    const secretMessage = "ME GUSTAS Y QUIERO SEGUIR CONOCIENDOTE";
+    const secretMessage = "ME GUSTAS";
 
     let isPlaying = false;
 
